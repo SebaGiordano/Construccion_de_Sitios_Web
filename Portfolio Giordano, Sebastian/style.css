@@ -1,0 +1,672 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(30,30,30);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(83, 27, 136);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgba(235, 235, 235);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+}
+
+header h1 {
+    color:blueviolet;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    animation-name: mianimacion2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion2 {
+    0% {
+        transform: scale(0.2);
+    }
+    85% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.2);
+    }
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("img/fondo1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#home p{
+    color: white;
+    margin: 15px;
+    padding: 30px;
+    font-size: 1.7em;
+}
+
+#home .titulo{
+    color:beige
+}
+
+#acerca .container{
+    text-align: center;
+    padding: 60px 12px;
+    margin-top: 0px; 
+    height: 620px;
+    background-color: rgb(30,30,30);
+    /* background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("img/fondo2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+#acerca h2{
+    color:beige;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#acerca p{
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#acerca .texto{
+    max-width: 90%;
+}
+
+
+#herramientas{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;
+    position: relative;
+    flex-wrap: nowrap;
+    height: 700px;
+}
+
+#herramientas .container{
+    padding: 20px 12px;
+    /* padding-bottom: 50px; */
+}
+
+#herramientas .programas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+#herramientas p{
+    color: hotpink;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#herramientas h2{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: beige;
+}
+
+#herramientas h3{
+    margin-top: 0;
+    font-size: 1em;
+}
+
+#herramientas .pr{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2%;
+    align-items:center;
+
+}
+
+#herramientas img{
+    width: 50px;
+    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+} 
+
+#contacto{
+    height: 550px;
+    background-color: rgb(30,30,30);
+}
+
+#contacto .container{
+    text-align: center;
+    padding: 0px 12px;
+    background-color: rgb(30,30,30);
+}
+
+#contacto h3{
+    /* margin-top: 50px; */
+    color: white;
+}
+
+#contacto p{
+    color: white;
+}
+
+#contacto li{
+    list-style: none;
+    margin: 25px 0px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contacto button{
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: cadetblue;
+    color: black;
+    font-size: medium;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 150px;
+}
+
+
+footer .imgfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer p {
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        z-index: 6;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header a{
+        font-size: 1.2em;
+        margin: 8px;
+    }
+
+    #home p{
+        margin-top: 10%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #acerca{
+        width: 100%;
+        background-color: rgb(30,30,30);
+    }
+
+    #acerca .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 650px;
+    }
+
+    #acerca .texto{
+        width: 60%;
+        margin-top: 100px;
+        padding-left: 7px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acerca h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        text-align: initial;
+    }
+
+    #acerca p{
+        text-align: initial;
+    }
+
+    #acerca .img-container{
+    background-image: url("img/Seba.jfif");
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 130px;
+    margin-left: 3%;
+    height: 350px;
+    width: 40%;
+    }
+
+    #herramientas{
+        display: flex;
+        background-color: rgb(30,30,30);
+        text-align: center;
+        color: white;
+        position: relative;
+        flex-wrap: nowrap;
+        height: 680px;   
+    }
+
+    #herramientas .container{
+        padding: 20px 12px;
+        padding-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    #herramientas .programas{
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: row;
+    }
+
+    #herramientas .pr{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin-top: 2%;
+        margin: 30px;
+    }
+
+    #herramientas img{
+        display: flex;
+        flex-direction: row;
+        width: 90px;
+        max-height: 95px;
+    }
+
+    #herramientas h2{
+        margin-top: 30px;
+        font-size: 2.8em;
+        color: beige;
+    } 
+
+    #herramientas p{
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    #herramientas h3{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
+        text-align: initial;
+    }
+
+    #contacto{
+        height: 700px;
+        margin-top: 20px;
+        background-color: rgb(30,30,30);
+    }
+
+    #contacto .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-left: 3%;
+    } 
+
+    #contacto h3, p{
+        text-align: initial;
+        color: white;
+    }
+
+    #contacto h3{
+        margin-top: 10%;
+    }
+
+    #contacto .caracteristicas{
+        text-align: initial;
+        display: flex;
+        justify-content: initial;
+    }
+
+    #contacto input{
+        font-size: 1em;
+    }
+
+    #contacto textarea{
+        font-size: 1.2em;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer p{
+        font-size: 1.3em;
+        color: black;
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+
+    footer .imgfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    footer img{
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+    }
+}
+
+
+@media (min-width: 1150px){
+
+    header{
+        position: fixed;
+        z-index: 6;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header a{
+        font-size: 1.2em;
+        margin: 8px;
+    }
+
+    #home p{
+        margin-top: 10%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #acerca{
+        width: 100%;
+        background-color: rgb(30,30,30);
+    }
+
+    #acerca .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 670px;
+    }
+
+    #acerca .texto{
+        width: 60%;
+        margin-top: 110px;
+        padding-left: 7px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acerca h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        text-align: initial;
+    }
+
+    #acerca p{
+        text-align: initial;
+    }
+
+    #acerca .img-container{
+    background-image: url("img/Seba.jfif");
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+    margin-left: 3%;
+    height: 350px;
+    width: 40%;
+    }
+
+    #herramientas{
+        display: flex;
+        background-color: rgb(30,30,30);
+        text-align: center;
+        color: white;
+        position: relative;
+        flex-wrap: nowrap;
+        height: 580px;
+    }
+
+    #herramientas .container{
+        padding: 20px 12px;
+        padding-bottom: 50px;
+    }
+
+    #herramientas .programas{
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: row;
+    }
+
+    #herramientas .pr{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin-top: 2%;
+        margin: 30px;
+    }
+
+    #herramientas img{
+        display: flex;
+        flex-direction: row;
+        width: 130px;
+        max-height: 135px;
+    }
+
+    #herramientas h2{
+        margin-top: 30px;
+        font-size: 2.8em;
+        color: beige;
+    } 
+
+    #herramientas p{
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    #herramientas h3{
+        margin-top: 50px;
+        font-size: 1.5em;
+        text-align: initial;
+        margin-bottom: 80px;
+    }
+
+    #contacto{
+        height: 750px;
+        background-color: rgb(30,30,30);
+    }
+
+    #contacto .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-left: 3%;
+    } 
+
+    #contacto h3, p{
+        text-align: initial;
+        color: white;
+    }
+
+    #contacto h3{
+        margin-top: 13%;
+    }
+
+    #contacto .caracteristicas{
+        text-align: initial;
+        display: flex;
+        justify-content: initial;
+    }
+
+    #contacto input{
+        font-size: 1em;
+    }
+
+    #contacto textarea{
+        font-size: 1.2em;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer p{
+        font-size: 1.3em;
+        color: black;
+        margin-right: 30px;
+    }
+
+    footer .imgfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    footer img{
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+    }
+}
+
