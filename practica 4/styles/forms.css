@@ -1,0 +1,21 @@
+form {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.formContainer * {
+    width: 95%;
+    padding: 2%;
+    margin: 3%;
+}

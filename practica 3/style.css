@@ -1,0 +1,52 @@
+h1 {
+    font-family:verdana;
+    font-size:50px;
+    font-style:italic;
+    color:#000000;
+}
+
+h2 {
+    font-size:35px;
+}
+
+li {
+    font-size:25px;
+}
+
+table {
+    font-size:25px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.elemento1 {
+    justify-content: space-between;
+    top: 500px;
+}
+
+.elemento2 {
+    justify-content: right;
+    position: relative;
+    top: -75px;
+    left: 5%;
+}
+
+.fondo {
+    background-image: 
+    url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg");
+    background-size: contain;
+}
+
+

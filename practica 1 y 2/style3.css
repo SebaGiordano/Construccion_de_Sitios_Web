@@ -1,0 +1,63 @@
+#cabecera {
+    font-family:verdana;
+    background: yellow;
+    font-size:14px;
+    font-style:italic;
+    color:#0000aa;
+}
+
+#cuerpo {
+    font-family:verdana;
+    background: greenyellow;
+    font-size:14px;
+    font-style:italic;
+    color:#0000aa;
+}
+
+#pie {
+    font-family:verdana;
+    background: pink;
+    font-size:14px;
+    font-style:italic;
+    color:#0000aa;
+}
+
+#caja1, #caja2 {
+    background-color: aquamarine;
+    font-family: Verdana;
+}
+
+#caja1 {
+    position: relative;
+    left: 30px;
+    top: 0px;
+}
+
+#caja2 {
+    position: absolute;
+    left: 40px;
+    top: 190px;
+}
+
+#cabecera, #primercolumna, #segundacolumna {
+    background-color: aquamarine;
+    font-family: Verdana;
+}
+
+#cabecera {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+}
+
+#primercolumna {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+#segundacolumna {
+    position: absolute;
+    left: 800px;
+    top: 300px;
+}

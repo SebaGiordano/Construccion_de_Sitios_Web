@@ -1,0 +1,208 @@
+/* FUENTE DE LETRA */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* MODO ESCRITORIO */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PARA TODAS LAS SECCIONES */
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-left: 15%;
+    font-size: 2.2em;
+}
+
+p {
+    font-size: x-small;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, p {
+    margin: 25px;
+    color: white;
+}
+
+img {
+    margin: 20px;
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+/* CONTENEDOR GENERAL */
+
+.principal {
+    margin: 50px;
+    padding: 50px;
+    height: 35em;
+    width: 70em;
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: row
+}
+
+/* PRIMER SECCION */
+
+.box {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 24em;
+}
+
+.box h1{
+    margin-left: 15%;
+}
+
+.box .titulo1{
+    width: 60%;
+    text-align: initial;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-left: 15%;
+}
+
+.box .boton1{
+    color: hsl(31, 77%, 52%);
+    margin-left: 15%;
+    margin-top: 25%;
+}
+
+/* SEGUNDA SECCION */
+
+.box2 {
+    background-color: hsl(184, 100%, 22%);
+    width: 25em;
+}
+
+.box2 h1{
+    margin-left: 15%;
+}
+
+.box2 .titulo2{
+    width: 60%;
+    text-align: initial;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-left: 15%;
+}
+
+.box2 .boton2{
+    color: hsl(184, 100%, 22%);
+    margin-left: 15%;
+    margin-top: 23%;
+}
+
+/* TERCER SECCION */
+
+.box3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 25em;
+}
+
+.box3 h1{
+    margin-left: 15%;
+}
+
+.box3 .titulo3{
+    width: 60%;
+    text-align: initial;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-left: 15%;
+}
+
+.box3 .boton3{
+    color: hsl(179, 100%, 13%);
+    margin-left: 15%;
+    margin-top: 23%;
+}
+
+/* PARA TODOS LOS BOTONES */
+
+.boton1, .boton2, .boton3 {
+    margin: 40px;
+    border-radius: 50px;
+    width: 190px;
+    height: 55px;
+    background-color: white;
+    font-size: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    border-color: white;
+}
+
+/* MODO TELEFONO */
+
+@media (max-width: 500px){
+
+    /* CONTENEDOR GENERAL */
+
+    .principal{
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        padding: 50px;
+        height: 106em;
+        width: 20em;
+    }
+
+    /* PRIMER SECCION */
+
+    .box{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        width: 20em;
+    }
+
+    /* SEGUNDA SECCION */
+
+    .box2{
+        background-color: hsl(184, 100%, 22%);
+        width: 20em;
+    }
+
+    /* TERCER SECCION */
+
+    .box3{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 20em;
+    }
+
+    /* PARA TODOS LOS BOTONES */
+
+    .boton1, .boton2, .boton3 {
+        margin: 40px;
+        border-radius: 50px;
+        width: 175px;
+        height: 45px;
+        background-color: white;
+        font-size: 1.1em;
+        font-family: 'Lexend Deca', sans-serif;
+        border-color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
