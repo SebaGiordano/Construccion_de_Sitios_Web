@@ -53,17 +53,26 @@ p{
 }
 
 .boton1{
-    width: 230px;
+    width: 250px;
     height:50px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 1em;
     background-color: blue;
     color: white;
 }
 
+.boton1:hover{
+    background-color: blueviolet;
+}
+
 .boton2{
-    width: 230px;
+    width: 250px;
     height:50px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 1em;
+}
+
+.boton2:hover{
+    color: white;
+    background-color: blueviolet;
 }
